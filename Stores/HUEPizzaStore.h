@@ -8,7 +8,7 @@
 class HUEPizzaStore : public PizzaStore
 {
 public:
-    Pizza *CreatePizza(std::string type) override
+    Pizza *CreatePizza(std::string type) const override
     {
         if (type == "cheese")
         {

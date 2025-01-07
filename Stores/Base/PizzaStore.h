@@ -22,12 +22,10 @@ public:
 	}
 
 protected:
-	virtual Pizza *CreatePizza(std::string type)
-	{
-		return nullptr;
-	}
-	virtual void Welcome(){};
-	virtual void Thanks(){};
+	virtual Pizza* CreatePizza(std::string type) const = 0;
+	
+	virtual void Welcome() = 0;
+	virtual void Thanks() = 0;
 };
 
 #endif // PIZZASTORE_H

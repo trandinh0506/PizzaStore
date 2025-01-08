@@ -30,11 +30,11 @@ public:
     }
 
 protected:
-    void Welcome() override
+    void Welcome() const override
     {
         std::cout << "----- Da Nang Pizza Store -----" << std::endl;
     }
-    void Thanks() override
+    void Thanks() const override
     {
         std::cout << "----- Da Nang Pizza Store Thanks for order -----" << std::endl;
     }

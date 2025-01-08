@@ -24,8 +24,8 @@ public:
 protected:
 	virtual Pizza* CreatePizza(std::string type) const = 0;
 	
-	virtual void Welcome() = 0;
-	virtual void Thanks() = 0;
+	virtual void Welcome() const = 0;
+	virtual void Thanks() const = 0;
 };
 
 #endif // PIZZASTORE_H
